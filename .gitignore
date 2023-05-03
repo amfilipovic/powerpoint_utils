@@ -50,6 +50,8 @@ Backup of *.*
 !*.py
 !*.vb
 !*.ps1
+!*.rb
+!*.c
 
 # Miscellaneous
 runner.*
