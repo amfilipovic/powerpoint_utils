@@ -3,12 +3,14 @@ import os
 import platform
 from pptx import Presentation
 
+# Define a function to clear the console screen based on the OS.
 def clear_screen():
     if platform.system() == 'Windows':
         os.system('cls')
     else:
         os.system('clear')
 
+# Define a function to format file size in human-readable format.
 def file_format_size(size):
     power = 2**10
     n = 0
@@ -25,6 +27,7 @@ report = script_name + '.csv'
 total_number_of_slides = 0
 total_filesize = 0
 
+# Clear the console screen.
 clear_screen()
 
 current_folder = os.getcwd()

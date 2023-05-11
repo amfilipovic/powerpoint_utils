@@ -6,12 +6,14 @@ import tkinter as tk
 from pptx import Presentation
 from tkinter import filedialog
 
+# Define a function to clear the console screen based on the OS.
 def clear_screen():
     if platform.system() == 'Windows':
         os.system('cls')
     else:
         os.system('clear')
 
+# Define a function to format file size in human-readable format.
 def file_format_size(size):
     power = 2**10
     n = 0
@@ -70,6 +72,7 @@ def save_report():
     report_filename = os.path.basename(report)
     result_text.insert(tk.END, f"Report saved to '{report_filename}'")
 
+# Clear the console screen.
 clear_screen()
 
 root = tk.Tk()
